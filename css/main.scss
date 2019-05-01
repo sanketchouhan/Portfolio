@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+
+    .col-12{
+        padding: 0;
+    }
+
+    .rightBox{
+        overflow: hidden;
+        position: relative;
+        .box{
+            position: absolute;
+            height: 60%;
+            width:60%;
+            top: 50%;
+            left: -50%;
+            transform: translate(-20%,-50%);
+            border: 10px solid rgb(177, 177, 177);
+        }
+
+        .content{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            // text-align: center;
+
+            .name{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            .designation{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            .btn{
+                opacity: 0;
+                width: 8.5rem;
+                margin: 1rem 1rem 1rem 0;
+            }
+            .hireMe{
+                color: #fff;
+                background: #000;
+                transform: translateY(15px);
+            }
+            .explore{
+                border: 2px solid #000;
+                transform: translateY(15px);
+            }
+        }
+    }
+    .leftBox{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: rgb(177, 177, 177);
+        z-index: 1;
+        overflow: hidden;
+
+        .leftBoxOverlay{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background: gray;
+            z-index: 10;
+        }
+
+        // .image{
+        //     position: absolute;
+        //     height: 70vh;
+        //     width: 60%;
+        //     bottom: 0;
+        //     right: 25%;
+        //     background: #000;
+        //     z-index: 5;
+        // }
+
+        .box{
+            position: absolute;
+            top: 30%;
+            right: -20%;
+            height: 40%;
+            width: 50%;
+            border: 5px solid #fff;
+        }
+    }
+}
