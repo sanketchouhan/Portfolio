@@ -1,18 +1,139 @@
+// $lightBg: #68737C;
+$lightBg: #ECEAEB;
+$Bg : #D7D5D6;
+$darkBg: #74716F;
+
+
 *{
     padding: 0;
     margin: 0;
 }
 
-header{
-    height: 100vh;
 
-    .col-12{
+.navbar-expand-md {
+    position: fixed;
+    width: 90%;
+    margin: 1rem auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .navbar-collapse{
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav{
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+button:focus{
+    outline: none;
+}
+
+.navbar-toggler{
+    padding: 0;
+}
+
+.toggler-btn{
+    // border: 2px solid #d3325f;
+    padding: 5px;
+    transition: all 1s ease;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: $darkBg;
+    transition: all 0.5s ease;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-4px,6px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+.container-fluid{
+    // width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    .row{
+        margin: 0;
         padding: 0;
     }
 
-    .rightBox{
+    .col-12{
+        padding: 0;
         overflow: hidden;
+    }
+
+    .content{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 310px;
+        transform: translate(-50%,-50%);
+        font-family: 'Playfair Display', serif;
+        // text-align: center;
+
+        .name{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .designation{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .btn{
+            opacity: 0;
+            width: 8.5rem;
+            margin: 1rem 1rem 1rem 0;              
+        }
+        .hireMe{
+            color: #fff;
+            background: #000;
+            transform: translateY(15px);
+            border: 2px solid #000;
+
+            &:hover{
+                background: gray;
+                border: 2px solid gray;
+            } 
+        }
+
+        .explore{
+            border: 2px solid #000;
+            transform: translateY(15px);  
+
+            &:hover{
+                background: gray;
+                border: 2px solid gray;
+                color: #fff;
+            } 
+        }
+    }
+
+    .rightBox{
         position: relative;
+        height: 100vh;
+        width: 100%;
         .box{
             position: absolute;
             height: 60%;
@@ -20,47 +141,16 @@ header{
             top: 50%;
             left: -50%;
             transform: translate(-20%,-50%);
-            border: 10px solid rgb(177, 177, 177);
-        }
-
-        .content{
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            // text-align: center;
-
-            .name{
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            .designation{
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            .btn{
-                opacity: 0;
-                width: 8.5rem;
-                margin: 1rem 1rem 1rem 0;
-            }
-            .hireMe{
-                color: #fff;
-                background: #000;
-                transform: translateY(15px);
-            }
-            .explore{
-                border: 2px solid #000;
-                transform: translateY(15px);
-            }
+            border: 15px solid $lightBg;
+            filter: blur(1px);
         }
     }
     .leftBox{
         position: relative;
         height: 100vh;
         width: 100%;
-        background: rgb(177, 177, 177);
+        transform: translateX(-100%);
+        background: $lightBg;
         z-index: 1;
         overflow: hidden;
 
@@ -68,9 +158,10 @@ header{
             position: absolute;
             height: 100vh;
             width: 100%;
-            background: gray;
+            background: $Bg;
             z-index: 10;
         }
+
 
         // .image{
         //     position: absolute;
@@ -86,9 +177,108 @@ header{
             position: absolute;
             top: 30%;
             right: -20%;
-            height: 40%;
+            height: 50%;
             width: 50%;
-            border: 5px solid #fff;
+            border: 10px solid #fff;
+            filter: blur(1px);
+        }
+
+        .content{
+            display: none;
         }
     }
+}
+
+
+.aboutMe{
+    min-height: 50vh;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .col-12:first-child{
+        display: none;
+    }
+
+    .container-fluid .leftBox .content{
+        display: block;
+        top: 75%;
+        left: 65%;
+        width: 250px;
+        h1{
+            font-size: 1.8rem;
+        }
+
+        h4{
+            font-size: 1rem;
+        }
+
+        .btn{
+            font-size: .8rem;
+            width: 7rem;
+            margin: 1rem .5rem 1rem 0;              
+        }
+    }
+    
+} 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    .col-12:first-child{
+        display: none;
+    }
+
+    .container-fluid .leftBox .content{
+        display: block;
+        top: 75%;
+        left: 65%;
+        // width: 250px;
+        h1{
+            font-size: 2.3rem;
+        }
+
+        h4{
+            font-size: 1.4rem;
+        }
+
+        .btn{
+            font-size: .9rem;
+            width: 8rem;
+            margin: 1rem .5rem 1rem 0;              
+        }
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .navbar-expand-md {
+    
+        .navbar-nav{
+            width: 60%;
+        }
+    }
+
+    
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .navbar-expand-md {
+    
+        .navbar-nav{
+            width: 55%;
+        }
+    }
+   
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
 }
