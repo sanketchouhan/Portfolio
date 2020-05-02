@@ -1,0 +1,374 @@
+/* font-family: 'Noto Serif', serif;
+font-family: 'Nunito', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.hire-me-btn{
+    padding: .3rem 2rem;
+    text-align: center;
+    background-color: indigo;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+.hire-me-btn:hover{
+    box-shadow: 0 5px 10px #b4b4b4;
+}
+.hire-me-btn:focus{
+    outline: none;
+}
+
+/* navigation bar */
+.navigation-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all .3s ease;
+}
+.navigation-bar .container{
+    display: flex;
+    align-items: center;
+}
+.navigation-bar .container .links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation-bar .container .logo1,
+.navigation-bar .container .logo2{
+    width: 3rem;
+}
+.navigation-bar .container .logo2{
+    display: none;
+}
+.navigation-bar .links a{
+    color: indigo;
+    text-decoration: none;
+}
+
+/* header */
+.header{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.header .bg-text1{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: -5rem;
+    opacity: .5;
+}
+.header .container .col-sm-6{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.header .container .col-sm-6:nth-child(2){
+    padding: 0;
+    position: relative;
+}
+.header .container .col-sm-6:nth-child(2) .img-div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50vw;
+    /* background-color: violet; */
+}
+.header .container .col-sm-6 .header-content p{
+    margin: .2rem 0;
+}
+.header .container .col-sm-6 .header-content h1{
+    margin: .2rem 0;
+    font-size: 3.5rem;
+    font-family: 'Noto Serif', serif;
+}
+.header .container .col-sm-6 .header-content .hire-me-btn{
+    margin-top: 1.5rem;
+}
+
+
+/* about me */
+.about-me{
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.about-me .bg-text2{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: -5rem;
+    opacity: .5;
+}
+.about-me .container .col-sm-6{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about-me .container .col-sm-6:nth-child(1){
+    padding: 0;
+    position: relative;
+}
+.about-me .container .col-sm-6:nth-child(1) .img-2-div{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50vw;
+    background-color: blue;
+}
+.about-me .about-me-content h3{
+    margin: .5rem 0;
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+}
+.about-me .about-me-content p a{
+    color: black;
+}
+.about-me .about-me-content p a:hover{
+    color: indigo;
+    text-decoration: none;
+}
+.about-me .about-me-content .hire-me-btn a{
+    color: white;
+}
+.about-me .about-me-content .hire-me-btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* skills */
+.skills{
+    width: 100%;
+    padding: 5rem 0 1rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.skills .bg-text3{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: -5rem;
+    opacity: .5;
+}
+.skills .container .row1 .col-sm-6:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills .container .row1 .col-sm-6:first-child h3{
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+}
+.skills .container .row1 .col-sm-6:last-child{
+    border-left: 2px solid blueviolet;
+}
+.skills .container .row2{
+    padding-top: 5rem;
+}
+.skills .container .row2 .col-sm-4 .skill-content{
+    padding: 2rem 1rem;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #c5c5c5;
+    transition: all .3s ease;
+}
+.skills .container .row2 .col-sm-4 .skill-content:nth-child(1){
+    border-left: 2px solid blue;
+}
+.skills .container .row2 .col-sm-4:nth-child(2) .skill-content{
+    border-left: 2px solid red;
+}
+.skills .container .row2 .col-sm-4:nth-child(3) .skill-content{
+    border-left: 2px solid green;
+}
+.skills .container .row2 .col-sm-4 .skill-content:hover{
+    border: none;
+    color: white;
+    box-shadow: 0 5px 10px #b4b4b4;
+    /* border: 2px solid blue; */
+    background-color: blueviolet;
+    /* background: url("images/21647862.jpg"); */
+}
+.skills .container .row2 .col-sm-4 .skill-content .icons img{
+    height: 2.5rem;
+    margin: .7rem;
+    border-radius: 5px;
+    position: relative;
+}
+/* .skills .container .row2 .col-sm-4 .skill-content .icons img::after{
+    position: absolute;
+    top: -100%;
+    width: 6rem;
+    height: 4rem;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+
+
+
+/* projects */
+.projects{
+    padding: 5rem 0 1rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.projects .bg-text4{
+    position: absolute;
+    height: 160vh;
+    top: 0;
+    right: -5rem;
+    opacity: .5;
+    z-index: -1;
+}
+.projects .container .row{
+    padding: 3rem 0;
+}
+.projects .container h3{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+.projects .container .row:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.projects .col-sm-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projects .col-sm-6 h2{
+    font-family: 'Noto Serif', serif;
+}
+.projects .btns{
+    text-align: center;
+}
+.projects .hire-me-btn{
+    margin: .5rem;
+}
+.projects .hire-me-btn a{
+    color: white;
+}
+.projects .hire-me-btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* footer */
+.footer{
+    padding: 5rem 0 0 0;
+}
+.footer .container .col-sm-6 .gmail-id{
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #c5c5c5;
+}
+.footer .container .col-sm-6 .gmail-id a{
+    font-size: 1.5rem;
+    color: indigo;
+    text-decoration: none;
+}
+.footer .container .col-sm-6 .social-media{
+    padding: 1rem 0 3rem 0;
+    text-align: right;
+}
+.footer .container .col-sm-6 .social-media img{
+    padding: .2rem .2rem .2rem 1.5rem;
+    height: 2rem;
+}
+.footer .footer-end p{
+    margin: 0;
+    padding: .2rem 0;
+    text-align: center;
+    color: white;
+    font-size: .7rem;
+    background-color: indigo;
+}
+
+@media (max-width: 575px) { 
+    .navigation-bar{
+        padding: 0!important;
+    }
+    .navigation-bar .container .links{
+        width: 100%;
+    }
+    .header .container .col-sm-6{
+        justify-content: center;
+    }
+    .header .container .col-sm-6:nth-child(2) .img-div{
+        width: 100vw;
+    }
+    .about-me .container .col-sm-6{
+        justify-content: center;
+    }
+    .about-me .container .col-sm-6:nth-child(1){
+        display: none;
+    }
+    .about-me .container .col-sm-6 .about-me-content h3{
+        text-align: center;
+    }
+    .skills{
+        padding: 3rem 0;
+    }
+    .skills .container .row1 .col-sm-6:first-child h3{
+        margin-bottom: 3rem;
+    }
+    .skills .container .row2 .col-sm-4{
+        padding: .5rem 0;
+    }
+    .projects{
+        padding: 3rem 0;
+    }
+    /* .projects .img-left{
+        display: flex;
+    }
+    .projects .img-right{
+        display: none;
+    } */
+    .projects .container h3{
+        margin-bottom: 3rem;
+    }
+    .footer .container .col-sm-6 .gmail-id a{
+        font-size: 1.2rem;
+    }
+    .footer .container .col-sm-6 .social-media{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .container .col-sm-6 .social-media img{
+        padding: .2rem;
+    }
+ }
