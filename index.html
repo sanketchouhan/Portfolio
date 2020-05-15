@@ -13,13 +13,14 @@
     <!-- fontawesome -->
     <!-- <script src="https://kit.fontawesome.com/5e26c06771.js" crossorigin="anonymous"></script> -->
     <!-- stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <div class="navigation-bar">
         <div class="container">
-            <!-- <div class="logo">img</div> -->
             <img src="images/logo-dark-bg.png" alt="" class="logo1">
             <img src="images/logo-light-bg.png" alt="" class="logo2">
             <div class="margin-div"></div>
@@ -29,21 +30,10 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <!-- <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo">
-                        SA
-                    </div>
-                    <a href="#home">Home</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div> -->
         </div>
     </div>
 
-
+    <!-- header -->
     <div class="header" id="home">
         <img src="images/design.png" alt="" class="bg-text1">
         <div class="container">
@@ -51,13 +41,16 @@
                 <div class="col-sm-6">
 
                     <div class="header-content">
-                        <p>Hello !</p>
+                        <p class="header-p1">Hello !</p>
                         <h1>I'm Sanket</h1>
-                        <p>Fullstack Developer working for<br>Mindtree from India.</p>
-                        <button class="hire-me-btn">Hire Me</button>
+                        <p class="header-p2">Fullstack Developer <br>from India.</p>
+                        <button class="hire-me-btn">
+                            <a href="mailto:sanket.chouhan555@gmail.com">Hire Me</a>
+                        </button>
                     </div>
                 </div>
                 <div class="col-sm-6">
+                    <div class="cover-div"></div>
                     <div class="img-div"></div>
                 </div>
             </div>
@@ -65,7 +58,7 @@
     </div>
 
     <!-- About me -->
-    <div class="about-me">
+    <div class="about-me" id="about">
         <img src="images/about.png" alt="" class="bg-text2">
         <div class="container">
             <div class="row">
@@ -82,15 +75,21 @@
                             development. I've had the pleasure of working with <b>Microsoft</b> on different projects
                             and engaging with multiple Microsoft teams.<br><br>
                             I enjoy building web applications, real-time applications, static and dynamic websites. I
-                            alse enjoy getting envolved with smaller <b>side projects</b>.<br><br>
+                            also enjoy getting envolved with smaller <b>side projects</b>.<br><br>
                             My experience spans small, medium and large agencies, in addition to occasional <b>freelance
                                 projects</b>.<br><br>
                             Browse some of my <a href="#projects"><b>work</b></a>, view my <a
                                 href="#skills"><b>skills</b></a>, or <a href="mailto:sanket.chouhan555@gmail.com"><b>get
                                     in touch</b></a>.<br><br>
-                            You can also find me on <b>LinkedIn</b>, <b>Github</b>, <b>Facebook</b>.<br><br>
+                            You can also find me on <a href="https://www.linkedin.com/in/sanket-chouhan-8b031912a"
+                                target="_blank"><b>LinkedIn</b></a>, <a href="https://github.com/sanketchouhan"
+                                target="_blank"><b>Github</b></a>, and <a
+                                href="https://www.facebook.com/sanket.chouhan.50"
+                                target="_blank"><b>Facebook</b></a>.<br><br>
                             <button class="hire-me-btn">
-                                <a href="" download="Sanket_Chouhan_CV" target="_blank">Download CV</a>
+                                <a href="resume/Sanket_Chouhan_CV.pdf" download="Sanket_Chouhan_CV"
+                                    target="_blank">Download
+                                    CV</a>
                             </button>
                         </p>
                     </div>
@@ -118,12 +117,30 @@
                     <div class="skill-content">
                         <h5>Frontend<br>Skills</h5>
                         <div class="icons">
-                            <img src="images/angular-logo.png" alt="" class="img-fluid">
-                            <img src="images/html5.png" alt="" class="img-fluid">
-                            <img src="images/css3.png" alt="" class="img-fluid">
-                            <img src="images/js.png" alt="" class="img-fluid">
-                            <img src="images/typescript.png" alt="" class="img-fluid">
-                            <img src="images/socketio.png" alt="" class="img-fluid">
+                            <div class="img-name">
+                                <img src="images/angular-logo.png" alt="" class="img-fluid">
+                                <div class="name">Angular</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/html5.png" alt="" class="img-fluid">
+                                <div class="name">HTML5</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/css3.png" alt="" class="img-fluid">
+                                <div class="name">CSS3</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/js.png" alt="" class="img-fluid">
+                                <div class="name">JavaScript</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/typescript.png" alt="" class="img-fluid">
+                                <div class="name">TypeScript</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/socketio.png" alt="" class="img-fluid">
+                                <div class="name">SocketIO Client</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,11 +148,26 @@
                     <div class="skill-content">
                         <h5>Backend<br>Skills</h5>
                         <div class="icons">
-                            <img src="images/nodejs.png" alt="" class="img-fluid">
-                            <img src="images/express.png" alt="" class="img-fluid">
-                            <img src="images/socketio.png" alt="" class="img-fluid">
-                            <img src="images/csharp.jfif" alt="" class="img-fluid">
-                            <img src="images/firebase.png" alt="" class="img-fluid">
+                            <div class="img-name">
+                                <img src="images/nodejs.png" alt="" class="img-fluid">
+                                <div class="name">NodeJS</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/express.png" alt="" class="img-fluid">
+                                <div class="name">Express</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/socketio.png" alt="" class="img-fluid">
+                                <div class="name">SocketIO</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/csharp.jfif" alt="" class="img-fluid">
+                                <div class="name">C#</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/firebase.png" alt="" class="img-fluid">
+                                <div class="name">Firebase</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,9 +175,18 @@
                     <div class="skill-content">
                         <h5>Database<br>Skills</h5>
                         <div class="icons">
-                            <img src="images/mongodb.jfif" alt="" class="img-fluid">
-                            <img src="images/sql.png" alt="" class="img-fluid">
-                            <img src="images/firebase-storage.png" alt="" class="img-fluid">
+                            <div class="img-name">
+                                <img src="images/mongodb.jfif" alt="" class="img-fluid">
+                                <div class="name">MongoDB</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/sql.png" alt="" class="img-fluid">
+                                <div class="name">SQL Server</div>
+                            </div>
+                            <div class="img-name">
+                                <img src="images/firebase-storage.png" alt="" class="img-fluid">
+                                <div class="name">Firebase Storage</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,18 +200,18 @@
         <img src="images/projects.png" alt="" class="bg-text4">
         <div class="container">
             <h3>Projects</h3>
-            <!-- project 1 -->
-            <div class="row">
+            <!-- project 1 Chat App -->
+            <div class="row" id="projects-row-1">
                 <div class="col-sm-6">
                     <a href="https://sanketchouhan.github.io/tic-tac-toe" target="_blank">
-                        <img data-src="images/project-2.png" alt="" class="img-fluid lozad">
+                        <img data-src="images/project-2.png" alt="Chat-App-Project-Image" class="img-fluid lozad">
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <h2>Chat App</h2>
-                    <p>It is a Resataurent website developed using frontend technologies like HTML5, CSS3, Javascript,
-                        Bootstrap4. There is also use of an external javascript library Lodaz for lasy loading of the
-                        images.</p>
+                    <p>It is a real-time chat application developed on MEAN Stack using Socket.IO for real-time web
+                        communication. The functionalities include Login/Register user, send/receive and confirm friend
+                        requests, upload profile picture, real-time chats and notifications.</p>
                     <div class="btns">
                         <button class="hire-me-btn view-website-btn">
                             <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">View Website</a>
@@ -181,40 +222,41 @@
                     </div>
                 </div>
             </div>
-            <!-- project 2 -->
-            <div class="row">
+            <!-- project 2 Tic-Tac-Toe Game-->
+            <div class="row" id="projects-row-2">
                 <div class="col-sm-6">
                     <a href="https://sanketchouhan.github.io/tic-tac-toe" target="_blank">
-                        <img data-src="images/project-2.png" alt="" class="img-fluid lozad">
+                        <img data-src="images/project-2.png" alt="Tic-Tac-Toe-Game-Project-Image"
+                            class="img-fluid lozad">
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <h2>Tic-Tac-Toe</h2>
-                    <p>It is a Resataurent website developed using frontend technologies like HTML5, CSS3, Javascript,
-                        Bootstrap4. There is also use of an external javascript library Lodaz for lasy loading of the
-                        images.</p>
+                    <p>It is a real-time game application developed on MEAN Stack using Socket.IO and deployed on
+                        Heroku.
+                        The functionalities include sharing play link via Whatsapp/any messenger, real-time multiplayer
+                        gaming, real-time chats and notifications.</p>
                     <div class="btns">
                         <button class="hire-me-btn view-website-btn">
-                            <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">View Website</a>
+                            <a href="https://sanketchouhan.github.io/tic-tac-toe" target="_blank">View Website</a>
                         </button>
                         <button class="hire-me-btn view-code-btn">
-                            <a href="">View Code</a>
+                            <a href="https://github.com/sanketchouhan/tic-tac-toe" target="_blank">View Code</a>
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- project 3 -->
-            <div class="row">
+            <!-- project 3 The Rosa Restaurent -->
+            <div class="row" id="projects-row-3">
                 <div class="col-sm-6">
                     <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">
-                        <img data-src="images/project-3.png" alt="" class="img-fluid lozad">
+                        <img data-src="images/project-3.png" alt="The-Rosa-Project-Image" class="img-fluid lozad">
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <h2>The ROSA</h2>
-                    <p>It is a Resataurent website developed using frontend technologies like HTML5, CSS3, Javascript,
-                        Bootstrap4. There is also use of an external javascript library Lodaz for lasy loading of the
-                        images.</p>
+                    <p>It is a static website for a Restaurant build using HTML5, CSS, SCSS, and JavaScript. The website
+                        includes landing page, menu page, blogs page, and contact page.</p>
                     <div class="btns">
                         <button class="hire-me-btn view-website-btn">
                             <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">View Website</a>
@@ -225,57 +267,126 @@
                     </div>
                 </div>
             </div>
-            <!-- project 4 -->
-            <div class="row">
+            <!-- project 4 Digital Agency -->
+            <div class="row" id="projects-row-4">
                 <div class="col-sm-6">
-                    <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">
-                        <img data-src="images/project-4.png" alt="" class="img-fluid lozad">
+                    <a href="https://sanketchouhan.github.io/digital-agency" target="_blank">
+                        <img data-src="images/project-4.png" alt="Digital-Agency-Project-Image" class="img-fluid lozad">
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Digital Agency</h2>
+                    <p>It is a website for a digital agency build using HTML5, CSS3, Javascript, and
+                        Bootstrap4. The website
+                        includes landing page, work page, service page, and team page.</p>
+                    <div class="btns">
+                        <button class="hire-me-btn view-website-btn">
+                            <a href="https://sanketchouhan.github.io/digital-agency" target="_blank">View Website</a>
+                        </button>
+                        <button class="hire-me-btn view-code-btn">
+                            <a href="https://github.com/sanketchouhan/digital-agency" target="_blank">View Code</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- project 5 Bose Speaker -->
+            <div class="row" id="projects-row-5">
+                <div class="col-sm-6">
+                    <a href="https://sanketchouhan.github.io/bose-speaker" target="_blank">
+                        <img data-src="images/project-5.png" alt="Bose-Speaker-Project-Image" class="img-fluid lozad">
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <h2>BOSE Speakers</h2>
-                    <p>It is a Resataurent website developed using frontend technologies like HTML5, CSS3, Javascript,
-                        Bootstrap4. There is also use of an external javascript library Lodaz for lasy loading of the
-                        images.</p>
+                    <p>It is a static web page for a new product release, build using HTML5, CSS, and JavaScript. The
+                        website
+                        has multiple sections such as home, shop, features, and contacts.</p>
                     <div class="btns">
                         <button class="hire-me-btn view-website-btn">
-                            <a href="https://sanketchouhan.github.io/the-rosa" target="_blank">View Website</a>
+                            <a href="https://sanketchouhan.github.io/bose-speaker" target="_blank">View Website</a>
                         </button>
                         <button class="hire-me-btn view-code-btn">
-                            <a href="">View Code</a>
+                            <a href="https://github.com/sanketchouhan/bose-speaker" target="_blank">View Code</a>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <a href="mailto:sanket.chouhan555@gmail.com">Email Us!</a> -->
 
     <!-- Educations -->
-
-
-
-
-    <div class="footer" id="contact">
+    <div class="timeline" id="timeline">
+        <h2>Academics & Experience</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <h1>Sanket Chouhan</h1>
-                    <p>Fullstack Developer<br>from India.</p>
+                <div class="col-sm-4 col-md-6">
+                    <div class="date">February 2018</div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="gmail-id">
-                        <a href="mailto:sanket.chouhan555@gmail.com">sanket.chouhan555@gmail.com</a>
-                    </div>
-                    <div class="social-media">
-                        <a href="" target="_blank"><img src="images/github.png" alt="" class="img-fluid"></a>
-                        <a href="mailto:sanket.chouhan555@gmail.com"><img src="images/gmail.png" alt=""
-                                class="img-fluid"></a>
-                        <a href="" target="_blank"><img src="images/linkedin.png" alt="" class="img-fluid"></a>
-                        <a href="https://www.facebook.com/sanket.chouhan.50" target="_blank"><img
-                                src="images/facebook.png" alt="" class="img-fluid"></a>
-                    </div>
+                <div class="col-sm-8 col-md-6">
+                    <p class="content">Started working in Mindtree Limited as .Net Developer. Completed Orchad Learning
+                        Programme from Mindtree Kalinga, Bhubneshwar.</p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <div class="date">July 2017</div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <p class="content">Completed Bachelor of Technology securing 7.79 DGPA from Dr. B. C. Roy
+                        Engineering College, Durgapur.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <div class="date">May 2013</div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <p class="content">Completed Higher Secondary Certificate Examination securing 78% from DAV Public
+                        School Koylanagar Dhanbad.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <div class="date">June 2011</div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <p class="content">Completed Secondary School Certificate Examination securing 9.4 CGPA from Holy
+                        Mother's Academy, Katrasgarh.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="gmail-id">
+                <a href="mailto:sanket.chouhan555@gmail.com">sanket.chouhan555@gmail.com</a>
+                <!-- <img src="bg-dot.png" alt="" class="footer-bg-img"> -->
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://github.com/sanketchouhan" target="_blank">
+                    <img src="images/github.png" alt="" class="img-fluid">
+                </a>
+                <a href="mailto:sanket.chouhan555@gmail.com">
+                    <img src="images/gmail.png" alt="" class="img-fluid">
+                </a>
+                <a href="https://www.linkedin.com/in/sanket-chouhan-8b031912a" target="_blank">
+                    <img src="images/linkedin.png" alt="" class="img-fluid">
+                </a>
+                <a href="https://www.facebook.com/sanket.chouhan.50" target="_blank">
+                    <img src="images/facebook.png" alt="" class="img-fluid">
+                </a>
             </div>
         </div>
         <div class="footer-end">
@@ -291,8 +402,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="javascript/noframework.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script src="javascript.js"></script>
+    <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
