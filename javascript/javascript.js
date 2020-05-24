@@ -15,10 +15,13 @@ $(document).ready(function () {
                 "background-color": "transparent"
             });
             $(".navigation-bar .links a").css({
-                "color": "indigo"
+                "color": "var(--body-font-color)"
             });
-            $(".navigation-bar .container .margin-div").css({
-                "margin": "0"
+            $(".navigation-bar .links").css({
+                "display": "flex"
+            });
+            $(".navigation-bar .container").css({
+                "justify-content": "flex-start"
             });
             $(".navigation-bar .container .logo1").css({
                 "display": "block"
@@ -26,24 +29,133 @@ $(document).ready(function () {
             $(".navigation-bar .container .logo2").css({
                 "display": "none"
             });
+            $(".navigation-bar .nav-btns").css({
+                "display": "none"
+            });
+            $(".navigation-bar-sm .menu").css({
+                "display": "none"
+            });
+            $(".navigation-bar-sm .close").css({
+                "display": "none"
+            });
         }
     })
-
-    function navbarToTop() {
-        $(".navigation-bar").css({
-            "background-color": "indigo"
+    $('.nav-btns .menu').click(function(){
+        $(".navigation-bar .menu").css({
+            "display": "none"
+        });
+        $(".navigation-bar .close").css({
+            "display": "block"
+        });
+        $(".navigation-bar .container .logo2").css({
+            "display": "block"
+        });
+        $(".navigation-bar .links").css({
+            "display": "flex"
         });
         $(".navigation-bar .links a").css({
             "color": "white"
         });
-        $(".navigation-bar .container .margin-div").css({
-            "margin": "auto"
+        $(".navigation-bar .container").css({
+            "justify-content": "space-between"
+        });
+        $(".navigation-bar").css({
+            "background-color": "var(--secondary-font-color)",
+        });
+    });
+    $('.nav-btns .close').click(function(){
+        $(".navigation-bar .menu").css({
+            "display": "block"
+        });
+        $(".navigation-bar .close").css({
+            "display": "none"
+        });
+        $(".navigation-bar .container .logo2").css({
+            "display": "none"
+        });
+        $(".navigation-bar .links").css({
+            "display": "none"
+        });
+        $(".navigation-bar .container").css({
+            "justify-content": "flex-end"
+        });
+        $(".navigation-bar").css({
+            "background-color": "transparent",
+        });
+    });
+
+
+    function navbarToTop() {
+        $(".navigation-bar").css({
+            "background-color": "transparent"
+        });
+        $(".navigation-bar .container").css({
+            "justify-content": "flex-end"
         });
         $(".navigation-bar .container .logo1").css({
             "display": "none"
         });
         $(".navigation-bar .container .logo2").css({
+            "display": "none"
+        });
+        $(".navigation-bar .links").css({
+            "display": "none"
+        });
+        $(".navigation-bar .nav-btns").css({
             "display": "block"
+        });
+        $(".navigation-bar .menu").css({
+            "display": "block"
+        });
+        $(".navigation-bar .close").css({
+            "display": "none"
+        });
+    }
+
+    $('.nav-sm-head .menu').click(function(){
+        $(".navigation-bar-sm .menu").css({
+            "display": "none"
+        });
+        $(".navigation-bar-sm .close").css({
+            "display": "block"
+        });
+        $(".navigation-bar-sm .nav-sm-logo").css({
+            "display": "block"
+        });
+        $(".navigation-bar-sm .nav-sm-links").css({
+            "display": "flex"
+        });
+        $(".navigation-bar-sm").css({
+            "background-color": "var(--secondary-font-color)",
+            "width":"100%",
+            "height":"100vh"
+        });
+    });
+
+    $('.nav-sm-head .close').click(function(){
+       closeMenu();
+    });
+    $('.navigation-bar-sm .nav-sm-links a').click(function(){
+       closeMenu();
+    });
+
+    function closeMenu(){
+        $(".navigation-bar-sm .menu").css({
+            "display": "block"
+        });
+        $(".navigation-bar-sm .close").css({
+            "display": "none"
+        });
+        $(".navigation-bar-sm .nav-sm-logo").css({
+            "display": "none"
+        });
+        $(".navigation-bar-sm .nav-sm-links").css({
+            "display": "none"
+        });
+        $(".navigation-bar-sm").css({
+            "background-color": "transparent",
+            "width":"5rem",
+            "height":"5rem"
         });
     }
 
@@ -73,7 +185,7 @@ $(document).ready(function () {
         element: document.getElementById('skills'),
         handler: function (down) {
             TweenMax.to(".skills .container .row1", .5, { transform: "translateY(0)", opacity: 1 });
-            TweenMax.staggerTo(".skills .container .row2 .col-sm-4", .9, { delay: .5, transform: "translateY(0)", opacity: 1 }, .3);
+            TweenMax.staggerTo(".skills .container .row2 .col-md-4", .9, { delay: .5, transform: "translateY(0)", opacity: 1 }, .3);
             // TweenMax.to(".about-me .about-me-content p", .5, { delay: .5, transform: "translateY(0)", opacity: 1 });
             // TweenMax.to(".about-me .about-me-content .hire-me-btn", .5, { delay: 1, transform: "translateY(0)", opacity: 1 });
         },
