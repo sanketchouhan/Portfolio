@@ -165,9 +165,10 @@ $(document).ready(function () {
     TweenMax.to(".header .header-content .header-p2", .5, { delay: 1.5, transform: "translateY(0)", opacity: 1 });
     TweenMax.to(".header .header-content .hire-me-btn", .5, { delay: 2, transform: "translateY(0)", opacity: 1 });
     // TweenMax.to(".header .container .col-sm-6:nth-child(2) .img-div::after", .5, { delay: 2.5, transform: "scaleX(1)"});
-    TweenMax.to(".header .container .col-sm-6:nth-child(2) .cover-div", .5, { delay: 2.5, transform: "scaleX(1)"});
-    TweenMax.to(".header .container .col-sm-6:nth-child(2) .img-div", .5, { delay: 2.5, transform: "scaleX(1)"});
-    TweenMax.to(".header .container .col-sm-6:nth-child(2) .cover-div", .5, { delay: 3.1, transform: "scaleX(0)", 'transform-origin': "right"});
+    TweenMax.to(".header .container .col-sm-6:nth-child(2) .cover-div", 1, { delay: 2.5, transform: "scaleX(1)"});
+    TweenMax.to(".header .container .col-sm-6:nth-child(2) img", .1, { delay: 2.8, transform: "scaleX(1)"});
+    TweenMax.to(".header .container .col-sm-6:nth-child(2) .img-bg-div", .1, { delay: 2.8, transform: "scaleX(1)"});
+    TweenMax.to(".header .container .col-sm-6:nth-child(2) .cover-div", 1, { delay: 3.2, transform: "scaleX(0)", 'transform-origin': "right"});
     // TweenMax.to(".header .header-content .hire-me-btn", .5, { delay: 2, transform: "translateY(0)", opacity: 1 });
 
 
