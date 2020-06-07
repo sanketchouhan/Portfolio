@@ -240,7 +240,7 @@ html,body{
     top: 0;
     left: 10%;
     /* background-color: blue; */
-    background: url('../bg-3.png') center center;
+    background: url('../bg-3.jpg') center center;
     background-size: cover;
     transform: scale(0);
     transform-origin: left;
